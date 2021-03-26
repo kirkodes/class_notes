@@ -57,3 +57,14 @@ push to git in pillars
 //to view the commit:
 // git log
 // shows us commit hash, branch name, commit message, and other metadata
+// when you do git log it will show you your history in chronological order... the top is the most recent
+
+// Go to GitHub.com and click Create Repository
+// Name our repository, make sure to leave it public and keep all other options deselected
+// Click create repository
+// Then copy the https url provide (one that ends with .git)
+// Go back to VSCode
+// Link your local repository with remote repository by typing:
+// git remote add origin <paste the link>
+// To push to remote repository
+// git push origin master
