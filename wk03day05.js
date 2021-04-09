@@ -157,8 +157,31 @@ let manager = {
     firstName: 'Stephen',
     lastName: 'Purpura',
     birthYear: 1993,
-    calcAge: function() {
-        return 2021 - this.birthYear
+    // 1st example: requires parameter of birthYear from outside
+    // setAge: function(birthYear) {
+    //     return 2021 - birthYear
+    // }
+    //another example: takes property from this.birthYear
+    // setAge: function () {
+    //     return 2021 - this.birthYear // this refers to the object it belongs to
+    setAge: function () {
+        this.age = 2021 - this.birthYear // creates new age property with value of function calculation once it has been called
     }
 }
-console.log(manager.calcAge())
+
+// console.log(manager.setAge(1993))
+// console.log(manager.setAge());
+console.log(this); // sees that this is a global object
+
+manager.setAge();
+console.log(manager.age);
+
+
+// function setAge() {
+//     // this is a function declaration that gets hoisted
+// }
+// setAge() // this is calling a function
+
+// let setAge = function () {
+//     // this is a function expression
+// }

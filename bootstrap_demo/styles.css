@@ -1,0 +1,15 @@
+body {
+    background-color: #2b527d;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+#mainTextContainer {
+    border: 3px solid #1f3c5c;
+    border-radius: 3px;
+    padding: 5%;
+}
+
+.cardImg {
+    height: 300px;
+    object-fit: cover;
+}
