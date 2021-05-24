@@ -29,7 +29,7 @@ if (isOpen) {
     console.log('the door is open');
 }; 
 
-// can also test false valuea
+// can also test false value
 if (isOpen === false){
     console.log('the door is shut');
 }
@@ -68,6 +68,7 @@ if (temp >= 80) {
 } else {
     console.log('I am not leaving my house.')
 }
+
 
 let userName = 'myUserName';
 let password = 'myPassword';
